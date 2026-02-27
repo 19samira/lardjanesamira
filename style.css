@@ -1,0 +1,108 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+    color: #333;
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+
+@media (min-width: 768px) {
+    body {
+        grid-template-columns: 350px 1fr;
+        padding: 40px;
+        gap: 20px;
+    }
+}
+
+
+.sidebar {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin: 15px;
+}
+
+.presentation {
+    background-color: rgb(243, 190, 221);
+    padding: 25px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.presentation h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+
+h3 {
+    background-color: rgb(243, 190, 221);
+    padding: 8px 15px;
+    border-radius: 50px;
+    /* Use px for soft pills instead of cap */
+    font-size: 0.9rem;
+    margin-top: 25px;
+}
+
+
+.main-content {
+    padding: 15px;
+}
+
+.section-title {
+    background-color: rgb(243, 190, 221);
+    padding: 12px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid rgb(241, 172, 205);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.card h3,
+.card h4 {
+    background-color: rgb(241, 172, 205);
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Typography & Lists */
+p,
+li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+strong {
+    color: #e07bb0;
+    /* A slightly darker pink for emphasis */
+}
